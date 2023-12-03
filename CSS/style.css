@@ -13,11 +13,10 @@ body {
     font-family: 'Mooli', sans-serif;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
-    padding-left: 50px;
-    padding-right: 50px;
     max-width: 1440px;
     min-width: 320px;
     margin: auto;
+    width: 95%;
 }
 
 .mobile-underline-hebergements{
@@ -145,6 +144,20 @@ font-size: 0.9em;
     margin-bottom: 20px;
 }
 
+.filter_blocs{
+    border-top-left-radius:30px ;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius:30px ;
+    border-bottom-right-radius: 30px;    
+    border: 0.5px solid lightgray;
+    padding: 5px;
+  
+}
+
+.filter_blocs:hover{
+    background-color:#cae9ff;
+}
+
 .filter-zone_icons{
     color: #0065FC;
 }
@@ -169,6 +182,14 @@ font-size: 0.9em;
     border-radius: 50% 50% 50% 50%;  
 }
 
+.hebergement_et_populaires_results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
 .Liste_Hébergements{
     margin-left: 30px;
 }
@@ -183,31 +204,21 @@ font-size: 0.9em;
     padding-left: 20px;
 }
 
-.filter_blocs{
-    border-top-left-radius:30px ;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius:30px ;
-    border-bottom-right-radius: 30px;    
-    border: 0.5px solid lightgray;
-    padding: 5px;
-  
-}
 
-.filter_blocs:hover{
-    background-color:#cae9ff;
-}
 
 .heberg_image_counter{
     margin:5px;
 }
 
 
-.heberg_image{   
+.heberg_image{      
     width: 100%; 
     height:110px;
     border-top-left-radius:10px;
     border-top-right-radius:10px;
     object-fit: cover;
+
+
 }
 
 
@@ -229,9 +240,34 @@ font-size: 0.9em;
     width: 33%;
     background-color:white;
     border-radius:20px; 
-    height: 195px;
+    height: 195px;    
+}
+
+/*
+.heberg_result{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 205px;
+    background-color:white;
+    border-radius:20px; 
+    object-fit: cover; 
+}
+*/
+
+/*
+.heberg_result{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 205px;
+    background-color:white;
+    border-radius:20px; 
+    object-fit: cover;
+    
     
 }
+*/
 
 .Hebergements-a_bloc {
     background-color: #F2F2F2;
@@ -343,13 +379,7 @@ font-size: 0.9em;
     color: #0065FC;           
 }
 
-.hebergement_et_populaires_results {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    width: 100%;
-}
+
 
 .activites_title {
     margin-left: 20px;
@@ -426,6 +456,7 @@ font-size: 0.9em;
 
 
 /*INSTRUCTIONS POUR RENDRE LE CODE RESPONSIBLE SUR FORMAT TABLETTE*/
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
@@ -518,9 +549,10 @@ font-size: 0.9em;
     }
 
 }
-  
+ 
 
 /*Instructions pour rendre le code responsible sur téléphone portable*/
+
 @media screen and (max-width: 767px) {
 
     .header_line {
